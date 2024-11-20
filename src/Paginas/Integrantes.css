@@ -1,0 +1,138 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Fondo del cuerpo */
+    color: #333;
+    margin-left: 150px; /* Mueve todo el contenido 150px a la derecha */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido se apile de arriba a abajo */
+    justify-content: flex-start; /* Alinea el contenido al principio */
+}
+
+/* Contenedor que ocupa toda la pantalla */
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    width: 100%; /* Asegura que las tarjetas ocupen todo el ancho disponible */
+    background-color: #f4f4f4; /* Fondo blanco igual al del cuerpo para que no se note */
+    position: absolute; /* Asegura que ocupe toda la página */
+    top: 0;
+    left: 0;
+    height: 100%; /* Asegura que ocupe todo el alto disponible */
+}
+
+/* Estilo de las tarjetas */
+.tarjeta {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    width: 280px;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tarjeta h2 {
+    margin-top: 15px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.tarjeta p {
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Diseño de detalle de perfil */
+.detalle-perfil1, .detalle-perfil2, .detalle-perfil3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Detalle perfil 1 a la derecha */
+.detalle-perfil1 {
+    justify-content: flex-end; /* Coloca el contenido a la derecha */
+}
+
+/* Detalle perfil 2 a la derecha completamente */
+.detalle-perfil2 {
+    justify-content: flex-start; /* Coloca el contenido a la izquierda */
+    margin-left: auto; /* Empuja el div hacia la derecha */
+}
+
+/* Detalle perfil 3 a la derecha */
+.detalle-perfil3 {
+    justify-content: flex-end; /* Coloca el contenido a la derecha */
+}
+
+/* Foto a la izquierda o derecha */
+.foto {
+    flex: 0 0 30%; /* La foto ocupa el 30% del contenedor */
+    max-width: 200px;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Información del perfil */
+.informacion {
+    flex: 1; /* Toma el espacio disponible */
+    max-width: 60%; /* Evita que ocupe más del 60% del espacio */
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #777;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .detalle-perfil1, .detalle-perfil2, .detalle-perfil3 {
+        flex-direction: column; /* Apilar los elementos en pantallas pequeñas */
+        text-align: center;
+    }
+
+    .foto {
+        max-width: 100%;
+    }
+
+    .informacion {
+        max-width: 100%;
+    }
+}

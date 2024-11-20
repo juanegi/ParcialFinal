@@ -1,0 +1,165 @@
+/* Contenedor general */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Encabezado */
+.welcome-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+.welcome-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #006400; /* Verde */
+  margin-bottom: 20px;
+}
+
+/* Contenedor de imágenes principales */
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre las imágenes */
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 300px; /* Limita el ancho máximo */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Botón principal */
+.button {
+  background-color: #28a745; /* Verde */
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px 0;
+}
+
+.button:hover {
+  background-color: #218838; /* Verde más oscuro */
+}
+
+/* Contenedor de las tarjetas */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Organiza las tarjetas en columnas responsivas */
+  gap: 20px; /* Espacio entre las tarjetas */
+  width: 100%;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+/* Tarjetas */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efecto al pasar el cursor */
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.modal-content p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.modal-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-modal:hover {
+  background: darkred;
+}
+

@@ -1,0 +1,198 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #006400; /* Verde oscuro */
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-right: auto;
+}
+
+.navbar-login {
+    background-color: #007BFF; /* Azul */
+    color: white;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+    
+}
+  
+.navbar-login:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+
+}
+
+.navbar-logo {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.navbar-logo img {
+    height: 45px; /* Imagen más pequeña */
+    max-width: 100%;
+}
+
+.navbar-sections {
+    display: flex;
+    list-style: none;
+    gap: 2rem; /* Espaciado uniforme entre los elementos */
+    margin-left: auto; /* Alinea este contenedor a la derecha */
+}
+
+.navbar-item {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-item:hover {
+    color: #98FB98; /* Verde claro */
+}
+
+/* Ajuste para el contenido debajo de la barra de navegación */
+body {
+    margin-top: 80px; /* Ajusta este valor para coincidir con la altura de la barra de navegación */
+}
+
+/* Estilos del Modal de Inicio de Sesión */
+.login-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+}
+
+.login-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+.login-modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.close-button {
+    background-color: red;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: darkred;
+}
+
+/* Botón de Inscripción */
+.register-button {
+    background-color: #28a745; /* Verde */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #218838; /* Verde más oscuro */
+  }
+  
+  /* Ajusta los estilos del modal para registro */
+  .login-modal-content {
+    width: 350px;
+  }
+  
+  
+  .user-menu {
+    position: relative;
+  }
+  
+  .user-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .dropdown-menu button {
+    margin: 5px 0;
+  }
+  
